@@ -1,0 +1,84 @@
+html{
+    background-color: rgb(162, 105, 0);
+}
+
+.TopBar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    align-items: center;
+    gap: 10px; /* space between buttons */
+    background-color: rgb(255, 162, 0);
+    border-radius: 30px;
+
+}
+
+/* Common button styles */
+.TopBar button {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 98, 0);
+    outline: none;
+    transition: border-color 0.3s ease;
+    transition: transform 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.Home {
+    justify-self: start;
+    padding: 10px;
+}
+
+.Gallery,
+.Shop,
+.About,
+.Account {
+    justify-self: end;
+    padding: 10px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgb(255, 98, 0);
+    border: 3px solid rgb(255, 98, 0);
+    
+}
+
+button:active {
+    transform: scale(0.95);
+
+}
+
+.GalleryMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery_inside {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: xx-large;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background-color: rgb(255, 168, 81);
+    
+}
+
+.gallery_inside img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery_inside:hover{
+    transform: scale(1.05);
+}
